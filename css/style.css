@@ -1,0 +1,138 @@
+html {
+  background: #0D3447;
+  font-family: 'HelveticaNeue-Light', Helvetica;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	background-color: #DEDCDC;
+	width: 730px;
+	margin: 20px auto;
+}
+
+.header{
+	width:95%;
+	height:27px;
+	border-bottom:1px solid black;
+	margin:10px 20px;
+}
+.header p{padding-top:5px;}
+
+/*btn group*/
+.btnGroup {
+	display: inline-block;
+	border-radius: 6px;
+	position: relative;
+	margin-left:27px;
+}
+.btnGroup b{
+	font-weight:normal;
+	margin-right:20px;
+}
+
+.btn {
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 7px 15px;
+	font-size: 14px;
+	border-radius: 4px;
+	margin-left: -5px;
+}
+
+.btnSelector {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+
+.btnSelector:hover,
+.btnSelector:focus,
+.btnSelector:active,
+.btnSelector.active {
+  color: #333333;
+  background-color: #CFCCCC;
+  border-color: #adadad;
+}
+
+.btnGroup .btn:focus {
+  outline: none;
+}
+
+.btnGroup .btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.btnGroup .btn:first-child:not(:last-child) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btnGroup .btn:last-child:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+/*end of btn group*/
+
+/*tab general*/
+.country {
+	padding: 10px 30px 35px;
+	display: block;
+	width: 670px;
+	height:450px;
+	text-align:left;
+}
+#regionSort {
+	display: none;
+}
+
+.alphabet {
+    margin: 0 0 7px;
+    overflow: hidden;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 5px 0px;
+	width: 679px;
+}
+.alphabet a {
+    width: 20px;
+    float: left;
+    color: #333;
+    cursor: pointer;
+    height: 15px;
+    border-right: 1px solid black;
+    display: block;
+    padding: 0px 2px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+.alphabet a.first {
+    border-radius: 3px 0 0 3px;
+}
+.alphabet a.last {
+    border-right: 1px solid silver;
+    border-radius: 0 3px 3px 0;
+}
+.alphabet a:hover,
+.alphabet a.active {
+    background: #FBF8E9;
+    font-weight: bold;
+}
+#aZContent{
+	display: block;
+	width: 700px;
+	height:450px;
+	overflow-y:scroll;
+}
